@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950">
+    <div class="h-screen flex items-center justify-center">
+      <div class="max-w-7xl w-full p-4">
+        <h1 class="text-zinc-200 font-bold text-4xl mb-5">
+          Kanban Board
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+          <div class="drop_zone p-5 rounded-md bg-slate-900 h-[400px] md:h-[550px]">
+            <h1 class="text-zinc-200 font-bold text-3xl select-none">
+              Backlog
+            </h1>
+            <div
+              id="ticket1"
+              draggable="true"
+              style="margin-top: 20px"
+              class="ticket bg-sky-600 p-4 rounded-md cursor-pointer"
+            >
+              <p class="text-xs text-white leading-normal select-none">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolores nobis dolor iure natus, neque vel architecto nostrum
+                asperiores adipisci libero exercitationem quisquam ea explicabo
+                voluptas amet autem voluptates id voluptatibus?
+              </p>
+            </div>
+            <div
+              id="ticket2"
+              draggable="true"
+              style="margin-top: 20px"
+              class="ticket bg-red-600 p-4 rounded-md cursor-pointer"
+            >
+              <p class="text-xs text-white leading-normal select-none">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolores nobis dolor iure natus, neque vel architecto nostrum
+                asperiores adipisci libero exercitationem quisquam ea explicabo
+                voluptas amet autem voluptates id voluptatibus?
+              </p>
+            </div>
+          </div>
+          <div class="drop_zone p-5 rounded-md bg-slate-900">
+            <h1 class="text-zinc-200 font-bold text-3xl mb-5 select-none">
+              A fazer
+            </h1>
+          </div>
+          <div class="drop_zone p-5 rounded-md bg-slate-900">
+            <h1 class="text-zinc-200 font-bold text-3xl mb-5 select-none">
+              Em progresso
+            </h1>
+          </div>
+          <div class="drop_zone p-5 rounded-md bg-slate-900">
+            <h1 class="text-zinc-200 font-bold text-3xl mb-5 select-none">
+              Finalizado
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
